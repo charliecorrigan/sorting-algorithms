@@ -9,4 +9,12 @@ describe ("bubble sort algorithm", function() {
     sorted = bubbleSort(unsorted);
     assert.deepEqual(sorted, expected);
   })
+
+  it ("sorts an array of unsorted letters", function() {
+    var unsorted = ["d", "b", "a", "c"];
+    var expected = ["a", "b", "c", "d"];
+    var sorted;
+    sorted = bubbleSort(unsorted);
+    assert.deepEqual(sorted, expected);
+  })
 })

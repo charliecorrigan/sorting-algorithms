@@ -1,6 +1,3 @@
-var unsorted = [5, 0, 1, 3, 4, 2];
-var sorted;
-
 function bubbleSort(unsortedItems) {
   var swapped = {status: true};
   while (swapped.status === true) {
@@ -27,8 +24,5 @@ function swapItems(unsortedItems, index, next, current, swapped) {
   unsortedItems[index + 1] = current;
   swapped.status = true;
 }
-
-sorted = bubbleSort(unsorted);
-console.log(sorted)
 
 module.exports = bubbleSort
